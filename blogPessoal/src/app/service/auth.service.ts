@@ -23,3 +23,4 @@ export class AuthService {
 return this.http.post<User>(`${environment.server}/usuarios/cadastrar`,  user)
   }
 }
+  
