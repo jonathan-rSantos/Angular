@@ -5,7 +5,7 @@ const app = express();
 
 const PORT = process.env.PORT || 4200;
 
-app.use(express.static(__dirname = '/dist/blogPessoal'));
+app.use(express.static(__dirname + '/dist/blogPessoal'));
 
 app.get('/*', (req, res) => {
     res.sendFile(__dirname + '/dist/blogPesssoal/index.html')
