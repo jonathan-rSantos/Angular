@@ -24,7 +24,6 @@ listaTemas: Tema[]
       /* alert('Sua sessão expirou faça o login novamente') */
       this.router.navigate(['/entrar'])
     }
-
     this.findAllTema()
   }
 

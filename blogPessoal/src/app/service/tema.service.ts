@@ -22,10 +22,10 @@ getByIdTema(id: number): Observable<Tema>{
   return this.http.get<Tema>(`${environment.server}/tema/${id}`, this.token)
   }
 
-  getByDescricaoTema(nome: string): Observable<Tema[]>{
+ /*  getByDescricaoTema(nome: string): Observable<Tema[]>{
     return this.http.get<Tema[]>(`${environment.server}/tema/nome/${nome}`, this.token)
     }
-
+ */
 postTema(tema: Tema): Observable<Tema>{
 return this.http.post<Tema>(`${environment.server}/tema`, tema, this.token)
 }
