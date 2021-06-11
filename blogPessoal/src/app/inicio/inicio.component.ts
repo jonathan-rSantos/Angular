@@ -14,14 +14,11 @@ import { TemaService } from '../service/tema.service';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-
-  postagem: Postagem = new Postagem()
-  listaPostagens: Postagem[]
-
-  idTema: number
   tema: Tema = new Tema()
+  postagem: Postagem = new Postagem()
   listaTemas: Tema[]
-
+  listaPostagens: Postagem[]
+  idTema: number
   user: User = new User()
   idUser = environment.id
 
